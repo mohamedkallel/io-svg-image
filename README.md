@@ -50,3 +50,10 @@ then in your global CSS file you add that class with path selector to select the
     fill: red !important
 }
 ```
+
+
+# Test
+You can download this project and then you can run the demo project by running
+
+ng serve demo
+
