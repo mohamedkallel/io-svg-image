@@ -4,7 +4,11 @@
   "author": "Mohamed Kallel",
   "homepage": "www.iovision.io",
   "description": "angular module for svg images",
-  "repository": "https://github.com/mohamedkallel/io-svg-image",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohamedkallel/io-svg-image"
+
+  },
   "peerDependencies": {
     "@angular/common": "^9.0.5",
     "@angular/core": "^9.0.5",
