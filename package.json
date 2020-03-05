@@ -1,6 +1,10 @@
 {
   "name": "io-svg-image",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "author": "Mohamed Kallel",
+  "homepage": "www.iovision.io",
+  "description": "angular module for svg images",
+  "repository": "https://github.com/mohamedkallel/io-svg-image",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

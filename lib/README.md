@@ -1,24 +1,59 @@
-# Lib
+# io-svg-image
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
+Insert in your html an svg image so the user can manipulate the svg style
 
-## Code scaffolding
+# Install
 
-Run `ng generate component component-name --project lib` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project lib`.
-> Note: Don't forget to add `--project lib` or else it will be added to the default project in your `angular.json` file. 
+npm install io-svg-image
 
-## Build
+# Usage
 
-Run `ng build lib` to build the project. The build artifacts will be stored in the `dist/` directory.
+import SvgImageModule to your module
 
-## Publishing
+```typescript
+@NgModule({
+  declarations: [
+    ...
+  ],
+  imports: [
+    ...,
+    SvgImageModule,
+    ...
+  ]
+})
+export class AppModule { }
+```
 
-After building your library with `ng build lib`, go to the dist folder `cd dist/lib` and run `npm publish`.
+then use it in your html
+```html
+...
+<svg-image src="/assets/mysvg.svg"></svg-image>
+...
+```
 
-## Running unit tests
+# Input
+[src] : it can contain the SVG file you want to load and it can contain also contain SVG source in XML format
 
-Run `ng test lib` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Example: change SVG fill color
+In your html file add a class to your SVG image
 
-## Further help
+```html
+...
+<svg-image src="/assets/mysvg.svg" class="mysvg"></svg-image>
+...
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+then in your global CSS file you add that class with path selector to select the path under your svg file
+
+```css
+.mysvg path{
+    fill: red !important
+}
+```
+
+
+# Test
+You can download this project and then you can run the demo project by running
+
+ng serve demo
+
